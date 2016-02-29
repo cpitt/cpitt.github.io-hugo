@@ -35,3 +35,4 @@ gulp.task('watch', function(){
   gulp.watch('./assets/sass/**/*.scss', ['sass']);
 });
 
+gulp.task('default', ['sass', 'js'])
