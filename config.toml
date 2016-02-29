@@ -1,0 +1,28 @@
+theme = "dos"
+languageCode = "en-us"
+contentdir = "content"
+publishdir = "public"
+builddrafts = false
+baseurl = "http://cpitt.github.io"
+canonifyurls = true
+title = "Cameron Pitt"
+author = "Cameron Pitt"
+copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
+
+
+[indexes]
+   category = "categories"
+   tag = "tags"
+[Params]
+  AuthorName = "Cameron"
+  github = "cpitt"
+  #bitbucket = "floch"
+  #flickr = "senjin"
+  twitter = "cameronpitt"
+  email = "me@cpitt.com"
+  description = "Polyglotal Software Engineer, Mongolian Speaker, Motorcyclist, and more "
+  cv = "/pages/cv"
+  muut = "fredrikloch"
+  linkedin = "cameronpitt"
+  cover = "/images/Untitled.jpg"
+  logo = "/images/avatar.jpg"

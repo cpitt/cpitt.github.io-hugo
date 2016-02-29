@@ -1,0 +1,120 @@
+.cover {
+  position: fixed;
+  z-index: 900;
+  display: block;
+  text-align:center;
+  padding-top: 15em;
+  width: 22.5em;
+  height: 100%;
+  color: rgb(125,212,255);
+  background: rgb(61, 63, 65);
+
+  &:after {
+    content: '';
+    background: url(/images/solarized_darcula.jpg) center/cover no-repeat;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position:absolute;
+    z-index: -1;
+  }
+
+
+  &.expanded {
+    width: 100%
+  }
+  &.container{
+    display: flex;
+    justify-content: center;
+    box-align:center;
+    box-pack: center;
+    align-items: center;
+    .profile {
+      vertical-align: baseline;
+    }
+  }
+  .avatar{
+    border: 2px solid rgba(0,120,126,.1);
+    box-shadow: 0 0 1px 1px rgba(0,0,0,.3);
+    @include media(320px){
+      @include circle(75px, 75px);
+    }
+    @include media(480px){
+      @include circle(100px, 100px);
+    }
+    @include media(768px) {
+      @include circle(120px, 120px);
+    }
+    @include media(992px){
+      @include circle(150px, 150px);
+    }
+  }
+  h1 {
+    font-weight: 300;
+    
+    font-size: 1.5em;
+    /*@include media(320px){*/
+      /*font-size: 1.5em;*/
+    /*}*/
+    /*@include media(480px){*/
+      /*font-size: 2em;*/
+    /*}*/
+    /*@include media(768px) {*/
+      /*font-size: 3em;*/
+    /*}*/
+
+    /*@include media(992px){*/
+      /*font-size: 3.5em;*/
+    /*}*/
+  }
+  h2 {
+    font-weight: 400;
+    color: rgb(211, 215, 217 );
+
+    @include media(320px){
+      font-size: 1.2em;
+    }
+    @include media(480px){
+      font-size: 1em;
+    }
+    @include media(768px) {
+      font-size: 1.5em;
+    }
+
+    @include media(992px){
+      font-size: 2em;
+    }
+  }
+}
+.nav {
+  ul{
+    li{
+      border: 1px solid;
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 1em;
+      border-radius: 20px;
+      font-size: 0.9em;
+      a {
+        font-weight: bold;
+        color: $light-gray;
+        &:hover {
+          color: $dark-gray;
+        }
+      }
+    }
+  }
+}
+
+.social {
+  li {
+    font-size: 2em;
+    padding: 4px;
+    display: inline-block;
+  }
+  a {
+    color: $light-gray
+  }
+}

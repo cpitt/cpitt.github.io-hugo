@@ -1,0 +1,33 @@
+@import "bourbon";
+@import "base/base";
+@import "neat";
+
+@import "components/cover.scss";
+
+body{
+  height: 100%;
+}
+
+.hidden{
+  visibility: hidden
+}
+.main {
+  bottom: 0;
+  left: 22.5rem;
+  padding: 2rem 3rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+
+.typer-cursor{
+  opacity: 1;
+  /*animation: blink 0.7s infinite;*/
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
